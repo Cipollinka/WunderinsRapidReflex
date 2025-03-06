@@ -31,7 +31,7 @@ const HomeScreen = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-      <LinearGradient colors={['#0d8bcd', '#3ca3d8', '#e0f5fe']} style={styles.gradient}>
+      <Image source={require('../assets/photos/bg.png')} style={{flex:1 ,width: '100%', height: '100%', position: 'absolute'}}/>
       <View style={{    position: 'absolute',
         top: 70,
         left: 20,
@@ -61,8 +61,6 @@ const HomeScreen = ({ navigation }) => {
           <CustomButton text='Shop' onPress={()=>{navigation.navigate('Shop')}} addStyles={{width: '50%'}}/>
           <CustomButton text='Rules' onPress={()=>{navigation.navigate('Rules')}} addStyles={{width: '50%'}}/>
         </View>
-        <Image source={require('../assets/photos/sandBack.png')} style={styles.image} />
-      </LinearGradient>
     </View>
   );
 };
